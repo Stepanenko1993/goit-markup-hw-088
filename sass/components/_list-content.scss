@@ -1,0 +1,25 @@
+.list-content {
+    display: flex;
+    column-gap: 30px;
+
+
+
+}
+
+.content {
+    color: var(--color-dark);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    margin-bottom: 10px;
+}
+
+.description {
+    color: var(--primary-text);
+
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+}
+

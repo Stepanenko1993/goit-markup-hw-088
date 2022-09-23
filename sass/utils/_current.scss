@@ -1,0 +1,13 @@
+.current {
+    color: var(--logo-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+}
+
+.current:hover,
+.current:focus {
+    color: var(--logo-color);
+}
+
+

@@ -1,0 +1,41 @@
+.logo-link,
+.logotip-footer {
+    color: var(--logo-color);
+}
+
+.logo-header {
+    color: var(--logo-color-black);
+}
+
+.logo-footer {
+    color: var(--secondary-text-color);
+}
+
+.logo-link {
+    margin-right: 93px;
+    padding-top: 24px;
+    padding-bottom: 25px;
+
+}
+
+.logo-link,
+.logo-header,
+.logotip-footer {
+    font-family: var(--secondary-font);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+}
+
+.logotip-footer {
+    display: flex;
+    margin-bottom: 20px;
+}
+.logo-link-footer {
+    fill: var(--secondary-text-color);
+&:hover,
+&:focus {
+    background-color: var(--logo-color);
+}
+}
