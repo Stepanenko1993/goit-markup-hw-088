@@ -12,6 +12,30 @@
     background-size: cover;
 
 }
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+  screen and (min-resolution: 192dpi) and (max-width: 767px),
+  screen and (min-resolution: 2dppx) and (max-width: 767px) {
+  .main-top {
+    background-image: url('../images/mobile/header.img@2x.jpg');
+  }
+}
+
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+  screen and (min-resolution: 192dpi) and (min-width: 768px),
+  screen and (min-resolution: 2dppx) and (min-width: 768px) {
+  .main-top {
+    background-image: url('../images/tablet/header.img2x1.jpg');
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
+  screen and (min-resolution: 192dpi) and (min-width: 1200px),
+  screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+  .main-top {
+    background-image: url('../images/desktop/img@2x30.jpg');
+  }
+}
 
 .main-list {
     margin-left: auto;
