@@ -22,8 +22,8 @@
           <div class="container container-header">
       <nav class="navigation page-header-container">
         <a class="logo-link" href="WebStudio"
-          >Web<span class="logo-header">Studio</span></a
-        >
+          >Web<span class="logo-header">Studio</span></a>
+        
 
         <ul class="menu-nav social-links">
           <li class="link-after"><a class="menu link current link-before" href="">Студія</a></li>
@@ -32,8 +32,12 @@
           </li>
           <li><a class="menu link hover-nav" href="">Контакти</a></li>
         </ul>
-        </nav> 
-         
+        </nav>
+        <button  class="open-mobile-menu" type="button" data-menu-open>
+          <svg class="open-button-mobile-menu" width="40" height="40">
+            <use href="./images/icons.svg.svg#icon-menu_40px" ></use>
+          </svg>
+        </button>
          
               <ul class="menu-nav-list">
                 <li class="mail-nav">
@@ -63,9 +67,35 @@
        
       
     </div>
+    <div class="mobile-menu-window" data-menu>
+      <div class="container container-mobile-window">
+        <button  class="close-mobile-menu" type="button" data-menu-close>
+          <svg class="icon-close-mpbile-window" width="40" height="40" >
+            <use href="./images/icons.svg.svg#icon-close_40px"></use>
+          </svg>
+        </button>
+        <ul class="nav-mobile-window">
+          <li class="naw-window"><a class="naw-window-list">Студія</a></li>
+          <li class="naw-window"><a class="naw-window-list">Портфоліо</a></li>
+          <li class="naw-window"><a class="naw-window-list">Контакти</a></li>
+        </ul>
+        <ul class="href-mobile-window">
+          <li class="href-window tel-window"><a class=" tel-mobile-window" href="tel:+38 096 111 11 11">+38 096 111 11 11</a></li>
+          <li class="href-window "><a class="mail-mobile-window" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+        </ul>
+        <ul class="link-mobile-window">
+          <li class="link-window"><a class="link-window-href link-window-href-border" href="Instagram">Instagram</a></li>
+          <li class="link-window"><a class="link-window-href link-window-href-border" href="Twitter">Twitter</a></li>
+          <li class="link-window"><a class="link-window-href link-window-href-border" href="Facebook">Facebook</a></li>
+          <li class="link-window"><a class="link-window-href" href="LinkedIn">LinkedIn</a></li>
+        </ul>
+      
+      </div>
+    </div>
+    
     </header>
-
-    <main class="main-text">
+    
+    <!-- <main class="main-text">
       
       <section class="main-top section">
         <div class="container container-color">
@@ -658,8 +688,9 @@
         </form>
     
       </div>
-    </div>
+    </div> -->
     <script src="./js/modal.js"></script>
     <script src="./js/mobile-menu.js"></script>
   </body>
-</html>
+  
+</html> 

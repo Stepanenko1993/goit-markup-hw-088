@@ -60,7 +60,6 @@ ul {
 }
 
 .logo-link {
-  margin-right: 93px;
   padding-top: 24px;
   padding-bottom: 25px;
 }
@@ -88,13 +87,27 @@ ul {
 }
 
 .container {
-  width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
 }
 
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -219,107 +232,34 @@ ul {
   color: var(--logo-color);
 }
 
-.container-header {
-  display: flex;
-  align-items: center;
-}
-
-.page-header-container {
-  display: flex;
-  align-items: center;
-}
-
 .menu-nav {
-  display: flex;
-  align-items: center;
-  column-gap: 50px;
-}
-
-.mail-nav {
-  margin-left: 318px;
-  text-align: center;
+  display: none;
 }
 
 .mail-link {
-  margin-right: 30px;
-}
-.mail-link:hover {
-  color: var(--logo-color);
+  display: none;
 }
 
-.mail-img {
-  margin-right: 10px;
-}
-
-.contact-phone:hover {
-  color: var(--logo-color);
-}
-
-.tel-img {
-  margin-right: 10px;
-}
-
-.mail-link,
 .contact-phone {
-  display: flex;
-  padding-top: 32px;
-  padding-bottom: 32px;
-  align-items: center;
+  display: none;
 }
 
 .menu-nav-list {
+  display: none;
+}
+
+.open-mobile-menu {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  line-height: 0;
+}
+
+.container-header {
+  padding-top: 16px;
   display: flex;
-}
-
-.header-top {
-  background-color: var(--secondary-text-color);
-}
-
-.link {
-  font-family: var(--primary-font);
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  color: var(--color-dark);
-  letter-spacing: 0.02em;
-}
-
-.mail-link,
-.contact-phone {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: var(--primary-text);
-  fill: currentColor;
-}
-
-.mail-link,
-.contact-phone {
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.link-before.current::after {
-  display: flex;
-  width: 100%;
-  height: 4px;
-  background: var(--logo-color);
-  border-radius: 2px;
-  content: "";
-  bottom: 0;
-  left: 0;
-  position: absolute;
-  transform: translateY(28px);
-}
-
-.header-border {
-  border-bottom: 1px solid var(--border-bottom);
-}
-
-.hover-nav:hover,
-.hover-nav:focus {
-  color: var(--logo-color);
+  align-items: center;
+  justify-content: space-between;
 }
 
 .main-top {
@@ -1088,4 +1028,108 @@ ul {
 .current:hover,
 .current:focus {
   color: var(--logo-color);
+}
+
+.close-mobile-menu {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  padding: 0;
+  border: none;
+  line-height: 0;
+  background: transparent;
+}
+
+.mobile-menu-window {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  background-color: var(--secondary-text-color);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.container-mobile-window {
+  position: relative;
+  padding-left: 40px;
+  padding-top: 48px;
+}
+
+.icon-close-mpbile-window {
+  cursor: pointer;
+}
+.icon-close-mpbile-window:hover, .icon-close-mpbile-window:focus {
+  fill: #2196F3;
+}
+
+.mobile-menu-window.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.nav-mobile-window {
+  margin-bottom: 302px;
+}
+
+.naw-window {
+  font-family: var(--primary-font);
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.17;
+  margin-bottom: 35px;
+  letter-spacing: 0.02em;
+}
+.naw-window:hover, .naw-window:focus {
+  color: var(--logo-color);
+}
+
+.href-window {
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 40px;
+}
+
+.tel-window {
+  padding-bottom: 32px;
+}
+
+.tel-mobile-window {
+  color: #2196F3;
+}
+
+.mail-mobile-window {
+  color: #757575;
+}
+
+.href-mobile-window {
+  padding-bottom: 64px;
+}
+
+.link-window {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+}
+
+.link-mobile-window {
+  display: flex;
+  column-gap: 10px;
+}
+
+.link-window-href {
+  color: #2196F3;
+  padding-right: 10px;
+}
+
+.link-window-href-border {
+  width: 22px;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+  transform: rotate(90deg);
 }/*# sourceMappingURL=main.css.map */
