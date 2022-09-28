@@ -1,3 +1,40 @@
+
+@media screen and ( min-width: 480px){
+    .container-type {
+        display: flex;
+        
+        flex-wrap: wrap;
+        justify-content: start;
+        gap: 8px;
+        
+        margin-bottom: 40px;
+    
+    
+    }
+    .photo-container-section {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        justify-content: center;
+        
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .portfolio-text {
     background-color: var(--secondary-text-color);
 }
@@ -51,16 +88,16 @@
 
 
 
-.container-type {
-    display: flex;
+// .container-type {
+//     display: flex;
 
-    justify-content: center;
-    column-gap: 8px;
+//     justify-content: center;
+//     column-gap: 8px;
 
-    margin-bottom: 50px;
+//     margin-bottom: 50px;
 
 
-}
+// }
 
 
 
@@ -75,11 +112,11 @@
 
 
 
-.photo-container-section {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-}
+// .photo-container-section {
+//     display: flex;
+//     flex-wrap: wrap;
+//     gap: 30px;
+// }
 
 .text-section {
     margin-bottom: 4px;

@@ -38,6 +38,11 @@
             <li><a class="menu link hover-nav" href="">Контакти</a></li>
           </ul>
         </nav>
+        <button  class="open-mobile-menu" type="button" data-menu-open>
+          <svg class="open-button-mobile-menu" width="40" height="40">
+            <use href="./images/icons.svg.svg#icon-menu_40px" ></use>
+          </svg>
+        </button>
 
         <ul class="menu-nav-list">
           <li class="mail-nav">
@@ -59,6 +64,32 @@
           </li>
         </ul>
       </div>
+      <div class="mobile-menu-window" data-menu>
+        <div class="container container-mobile-window">
+          <button  class="close-mobile-menu" type="button" data-menu-close>
+            <svg class="icon-close-mpbile-window" width="40" height="40" >
+              <use href="./images/icons.svg.svg#icon-close_40px"></use>
+            </svg>
+          </button>
+          <ul class="nav-mobile-window">
+            <li class="naw-window"><a class="naw-window-list" href="./index.html">Студія</a></li>
+            <li class="naw-window"><a class="naw-window-list" href="./portfolio.html">Портфоліо</a></li>
+            <li class="naw-window"><a class="naw-window-list">Контакти</a></li>
+          </ul>
+          <ul class="href-mobile-window">
+            <li class="href-window tel-window"><a class=" tel-mobile-window" href="tel:+38 096 111 11 11">+38 096 111 11 11</a></li>
+            <li class="href-window "><a class="mail-mobile-window" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+          </ul>
+          <ul class="link-mobile-window">
+            <li class="link-window"><a class="link-window-href link-window-href-border" href="Instagram">Instagram</a></li>
+            <li class="link-window"><a class="link-window-href link-window-href-border" href="Twitter">Twitter</a></li>
+            <li class="link-window"><a class="link-window-href link-window-href-border" href="Facebook">Facebook</a></li>
+            <li class="link-window"><a class="link-window-href" href="LinkedIn">LinkedIn</a></li>
+          </ul>
+        
+        </div>
+      </div>
+
     </header>
     <main class="bacground-color">
       <section class="section-nav section">
@@ -78,7 +109,7 @@
             <li class="employees employees-top">
               <a href="#" class="employees-link">
                 <div class="image-link">
-                  <picture>
+                  <picture class="image-employees">
                     <source srcset="./images/desktop/img38.jpg 1x, ./images/desktop/img@2x38.jpg 2x"
                     media="(min-width: 1200px)"
                     />
@@ -110,7 +141,7 @@
             <li class="employees employees-top">
               <a href="" class="employees-link">
                 <div class="image-link">
-                  <picture>
+                  <picture class="image-employees">
                     <source srcset="./images/desktop/img39.jpg 1x, ./images/desktop/img@2x39.jpg 2x"
                     media="(min-width: 1200px)"
                     />
@@ -143,7 +174,7 @@
             <li class="employees employees-top">
               <a href="" class="employees-link">
                 <div class="image-link">
-                  <picture>
+                  <picture class="image-employees">
                     <source srcset="./images/desktop/img40.jpg 1x, ./images/desktop/img@2x40.jpg 2x"
                     media="(min-width: 1200px)"
                     />
@@ -177,7 +208,7 @@
             <li class="employees employees-body">
               <a href="" class="employees-link">
                 <div class="image-link">
-                  <picture>
+                  <picture class="image-employees">
                     <source srcset="./images/desktop/img41.jpg 1x, ./images/desktop/img@2x41.jpg 2x"
                     media="(min-width: 1200px)"
                     />
@@ -211,7 +242,7 @@
             <li class="employees employees-body">
               <a href="" class="employees-link">
                 <div class="image-link">
-                  <picture>
+                  <picture class="image-employees">
                     <source srcset="./images/desktop/img42.jpg 1x, ./images/desktop/img@2x42.jpg 2x"
                     media="(min-width: 1200px)"
                     />
@@ -245,7 +276,7 @@
             <li class="employees employees-body">
               <a href="" class="employees-link">
                 <div class="image-link">
-                  <picture>
+                  <picture class="image-employees">
                     <source srcset="./images/desktop/img43.jpg 1x, ./images/desktop/img@2x43.jpg 2x"
                     media="(min-width: 1200px)"
                     />
@@ -278,7 +309,7 @@
             <li class="employees employees-footer">
               <a href="" class="employees-link">
                 <div class="image-link">
-                  <picture>
+                  <picture class="image-employees">
                     <source srcset="./images/desktop/img44.jpg 1x, ./images/desktop/img@2x44.jpg 2x"
                     media="(min-width: 1200px)"
                     />
@@ -311,7 +342,7 @@
             <li class="employees employees-footer">
               <a href="" class="employees-link">
                 <div class="image-link">
-                  <picture>
+                  <picture class="image-employees">
                     <source srcset="./images/desktop/img45.jpg 1x, ./images/desktop/img@2x45.jpg 2x"
                     media="(min-width: 1200px)"
                     />
@@ -344,7 +375,7 @@
             <li class="employees employees-footer">
               <a href="" class="employees-link">
                 <div class="image-link">
-                  <picture>
+                  <picture class="image-employees">
                     <picture>
                       <source srcset="./images/desktop/img46.jpg 1x, ./images/desktop/img@2x46.jpg 2x"
                       media="(min-width: 1200px)"
@@ -407,7 +438,7 @@
           </address>
         </div>
         <div class="address-footer-link-logo">
-          <h2 class="text-footer">приєднуйтесь</h2>
+          <h2 class="text-footer text-footer-telegram-link">приєднуйтесь</h2>
 
           <ul class="footer-link">
             <li class="">
@@ -461,7 +492,7 @@
           </ul>
         </div>
        <div class="text-footer-form">
-        <p class="text-footer">Підпишіться на розсилку</p>
+        <p class="text-footer footer-Mailing">Підпишіться на розсилку</p>
         
         <form class="form">
           <input type="text" class="contact-form" name="e-mail" placeholder="E-mail" required>
@@ -476,5 +507,6 @@
 
       </div>
     </footer>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
