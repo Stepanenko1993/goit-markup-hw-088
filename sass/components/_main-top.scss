@@ -81,19 +81,19 @@
 }
 .product-designer{
   width: 100%;
-  height: 460px;
+  height: 100%;
 }
 .frontenddeveloper{
   width: 100%;
-  height: 460px;
+  height: 100%;
 }
 .marketing{
   width: 100%;
-  height: 460px;
+  height: 100%;
 }
 .ui-designer{
   width: 100%;
-  height: 460px;
+  height: 100%;
 }
 .clients {
   display: flex;
@@ -124,6 +124,92 @@
   }
 
 }
+.container-footer {
+  
+  align-items: baseline;
+
+}
+.form {
+  
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  justify-content: center;
+
+
+}
+.main-footer {
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--accent-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.contact-form {
+
+  width: 100%;
+  height: 50px;
+  padding-left: 16px;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background: var(--accent-color);
+  outline: none;
+}
+
+.contact-form {
+  font-family: var(--primary-font);
+  font-size: 16px;
+  line-height: 1.25;
+  color: var(--secondary-text-color);
+}
+.address-footer-link {
+  
+  justify-content: center;
+  
+}
+.address-footer-link-logo {
+  justify-content: center;
+  margin-left: 70px;
+
+}
+.logotip-footer {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.footer-address{
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  
+}
+.mail{
+ justify-content: center;
+}
+.tel{
+  display: flex;
+  justify-content: center;
+}
+  
+.text-footer {
+ 
+  font-family: var(--primary-font);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  justify-content: center;
+ 
+  letter-spacing: 0.03em;
+  color: var(--secondary-text-color);
+  text-transform: uppercase;
+
+}
+
 
 }
 
