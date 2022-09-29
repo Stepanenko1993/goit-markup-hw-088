@@ -502,6 +502,8 @@ ul {
     justify-content: center;
     width: 210px;
     height: 92px;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 30px;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
