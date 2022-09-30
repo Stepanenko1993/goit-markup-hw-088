@@ -25,8 +25,26 @@
 
 
 
+@media screen and ( min-width: 768px){
+    .container-type{
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: center;
+        gap: 8px;
+        padding-bottom: 30px;
+    }
+    .photo-container-section {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 30px;
+        justify-content: center;
+        
+    }
 
 
+}
 
 
 
